@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println(constructRectangle(3))
+	fmt.Println(containsNearbyDuplicate([]int{1, 2, 1}, 0))
 }
