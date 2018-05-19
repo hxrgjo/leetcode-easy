@@ -22,3 +22,12 @@ func Test_isPalindrome(t *testing.T) {
 	actual := isPalindrome(12321)
 	assert.Equal(t, true, actual)
 }
+
+func Test_romanToInt(t *testing.T) {
+
+	actual := romanToInt("III")
+	assert.Equal(t, 3, actual)
+
+	actual = romanToInt("MCMXCIV")
+	assert.Equal(t, 1994, actual)
+}
