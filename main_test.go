@@ -17,3 +17,8 @@ func Test_reverse(t *testing.T) {
 	actual = reverse(1534236469)
 	assert.Equal(t, 0, actual)
 }
+
+func Test_isPalindrome(t *testing.T) {
+	actual := isPalindrome(12321)
+	assert.Equal(t, true, actual)
+}
