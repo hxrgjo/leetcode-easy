@@ -56,3 +56,47 @@ func Test_isValid(t *testing.T) {
 	actual = isValid("){")
 	assert.Equal(t, false, actual)
 }
+
+func Test_mergeTwoLists(t *testing.T) {
+	l1 := new(ListNode)
+	l1.Val = 1
+	l1.Next = &ListNode{
+		Val: 2,
+		Next: &ListNode{
+			Val: 4,
+		},
+	}
+
+	l2 := new(ListNode)
+	l2.Val = 1
+	l2.Next = &ListNode{
+		Val: 3,
+		Next: &ListNode{
+			Val: 4,
+		},
+	}
+
+	actual := mergeTwoLists(l1, l2)
+
+	expected := &ListNode{
+		Val: 1,
+		Next: &ListNode{
+			Val: 1,
+			Next: &ListNode{
+				Val: 2,
+				Next: &ListNode{
+					Val: 3,
+					Next: &ListNode{
+						Val: 4,
+						Next: &ListNode{
+							Val: 4,
+						},
+					},
+				},
+			},
+		},
+	}
+
+	assert.Equal(t, expected, actual)
+
+}
