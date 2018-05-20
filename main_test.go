@@ -31,3 +31,28 @@ func Test_romanToInt(t *testing.T) {
 	actual = romanToInt("MCMXCIV")
 	assert.Equal(t, 1994, actual)
 }
+
+func Test_longestCommonPrefix(t *testing.T) {
+	actual := longestCommonPrefix([]string{"flower", "flow", "flight"})
+	assert.Equal(t, "fl", actual)
+
+	actual = longestCommonPrefix([]string{"dogg", "racecar", "car"})
+	assert.Equal(t, "", actual)
+}
+
+func Test_isValid(t *testing.T) {
+	actual := isValid("()")
+	assert.Equal(t, true, actual)
+
+	actual = isValid("()[]{}")
+	assert.Equal(t, true, actual)
+
+	actual = isValid("([)]")
+	assert.Equal(t, false, actual)
+
+	actual = isValid("{[]}")
+	assert.Equal(t, true, actual)
+
+	actual = isValid("){")
+	assert.Equal(t, false, actual)
+}
