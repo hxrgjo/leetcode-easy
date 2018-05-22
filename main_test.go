@@ -100,3 +100,26 @@ func Test_mergeTwoLists(t *testing.T) {
 	assert.Equal(t, expected, actual)
 
 }
+
+func Test_fibonacci(t *testing.T) {
+	actual := fibonacci(10)
+	assert.Equal(t, 10, actual)
+}
+
+func Test_removeDuplicates(t *testing.T) {
+
+	actual := removeDuplicates([]int{1, 1, 2})
+	assert.Equal(t, 2, actual)
+
+	actual = removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4})
+	assert.Equal(t, 5, actual)
+}
+
+func Test_removeDuplicatesFaster(t *testing.T) {
+
+	actual := removeDuplicatesFaster([]int{1, 1, 2})
+	assert.Equal(t, 2, actual)
+
+	actual = removeDuplicatesFaster([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4})
+	assert.Equal(t, 5, actual)
+}
