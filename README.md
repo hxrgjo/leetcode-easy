@@ -10,6 +10,8 @@ leetcode practice
 * 014 Longest Common Prefix
 * 020 Valid Parentheses
 * 021 Merge Two Sorted Lists
+* 021 Merge Two Sorted Lists
+* 027 Remove Element
 * 219 Contains Duplicate II
 * 345 Reverse Vowels of a String
 * 492 Construct the Rectangle

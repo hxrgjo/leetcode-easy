@@ -123,3 +123,11 @@ func Test_removeDuplicatesFaster(t *testing.T) {
 	actual = removeDuplicatesFaster([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4})
 	assert.Equal(t, 5, actual)
 }
+
+func Test_removeElement(t *testing.T) {
+	actual := removeElement([]int{3, 2, 2, 3}, 2)
+	assert.Equal(t, 2, actual)
+
+	actual = removeElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2)
+	assert.Equal(t, 5, actual)
+}
