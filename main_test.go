@@ -131,3 +131,9 @@ func Test_removeElement(t *testing.T) {
 	actual = removeElement([]int{0, 1, 2, 2, 3, 0, 4, 2}, 2)
 	assert.Equal(t, 5, actual)
 }
+
+func Test_strStr(t *testing.T) {
+
+	actual := strStr("1123", "23")
+	assert.Equal(t, 2, actual)
+}
