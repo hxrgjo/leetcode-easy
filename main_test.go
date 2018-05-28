@@ -103,7 +103,7 @@ func Test_mergeTwoLists(t *testing.T) {
 
 func Test_fibonacci(t *testing.T) {
 	actual := fibonacci(10)
-	assert.Equal(t, 10, actual)
+	assert.Equal(t, 55, actual)
 }
 
 func Test_removeDuplicates(t *testing.T) {
@@ -136,4 +136,41 @@ func Test_strStr(t *testing.T) {
 
 	actual := strStr("1123", "23")
 	assert.Equal(t, 2, actual)
+}
+func Test_searchInsert(t *testing.T) {
+	actual := searchInsert([]int{1, 3, 5, 6}, 5)
+	assert.Equal(t, 2, actual)
+
+	actual = searchInsert([]int{1, 3, 5, 6}, 2)
+	assert.Equal(t, 1, actual)
+
+	actual = searchInsert([]int{1, 3, 5, 6}, 7)
+	assert.Equal(t, 4, actual)
+
+	actual = searchInsert([]int{1, 3, 5, 6}, 0)
+	assert.Equal(t, 0, actual)
+}
+
+func Test_countAndSay(t *testing.T) {
+	// 1.     1
+	// 2.     11
+	// 3.     21
+	// 4.     1211
+	// 5.     111221
+
+	actual := countAndSay(1)
+	assert.Equal(t, "1", actual)
+
+	actual = countAndSay(2)
+	assert.Equal(t, "11", actual)
+
+	actual = countAndSay(3)
+	assert.Equal(t, "21", actual)
+
+	actual = countAndSay(4)
+	assert.Equal(t, "1211", actual)
+
+	actual = countAndSay(5)
+	assert.Equal(t, "111221", actual)
+
 }
