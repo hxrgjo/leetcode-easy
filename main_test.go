@@ -174,3 +174,14 @@ func Test_countAndSay(t *testing.T) {
 	assert.Equal(t, "111221", actual)
 
 }
+
+func Test_maxSubArray(t *testing.T) {
+	actual := maxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
+	assert.Equal(t, 6, actual)
+
+	actual = maxSubArray([]int{-2, -3, -1, -5})
+	assert.Equal(t, -1, actual)
+
+	actual = maxSubArray([]int{1})
+	assert.Equal(t, 1, actual)
+}
