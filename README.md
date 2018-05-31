@@ -15,6 +15,7 @@ leetcode practice
 * 028 Implement strStr()
 * 035 Search Insert Position
 * 038 Count and Say
+* 058 Length of Last Word
 * 219 Contains Duplicate II
 * 345 Reverse Vowels of a String
 * 492 Construct the Rectangle

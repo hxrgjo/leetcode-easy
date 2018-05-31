@@ -190,3 +190,11 @@ func Test_maxSubArray(t *testing.T) {
 	actual = maxSubArray([]int{1})
 	assert.Equal(t, 1, actual)
 }
+
+func Test_lengthOfLastWord(t *testing.T) {
+	actual := lengthOfLastWord("Hello World")
+	assert.Equal(t, 5, actual)
+
+	actual = lengthOfLastWord("b   a    ")
+	assert.Equal(t, 1, actual)
+}
