@@ -141,6 +141,9 @@ func Test_strStr(t *testing.T) {
 
 	actual := strStr("1123", "23")
 	assert.Equal(t, 2, actual)
+
+	actual = strStr("mississippi", "issip")
+	assert.Equal(t, 4, actual)
 }
 func Test_searchInsert(t *testing.T) {
 	actual := searchInsert([]int{1, 3, 5, 6}, 5)
