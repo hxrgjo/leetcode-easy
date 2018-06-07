@@ -201,3 +201,11 @@ func Test_lengthOfLastWord(t *testing.T) {
 	actual = lengthOfLastWord("b   a    ")
 	assert.Equal(t, 1, actual)
 }
+
+func Test_plusOne(t *testing.T) {
+	actual := plusOne([]int{1, 2, 3})
+	assert.Equal(t, []int{1, 2, 4}, actual)
+
+	actual = plusOne([]int{9, 9, 9})
+	assert.Equal(t, []int{1, 0, 0, 0}, actual)
+}
