@@ -209,3 +209,12 @@ func Test_plusOne(t *testing.T) {
 	actual = plusOne([]int{9, 9, 9})
 	assert.Equal(t, []int{1, 0, 0, 0}, actual)
 }
+
+func Test_addBinary(t *testing.T) {
+
+	actual := addBinary("11", "1")
+	assert.Equal(t, "100", actual)
+
+	actual = addBinary("1010", "1011")
+	assert.Equal(t, "10101", actual)
+}
