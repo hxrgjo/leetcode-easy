@@ -24,7 +24,7 @@ func mySqrt(x int) int {
 		}
 	}
 
-	return end
+	return (start + end) / 2
 }
 
 func mySqrtLeetCodeSample(y int) int {
