@@ -18,6 +18,7 @@ leetcode practice
 * 058 Length of Last Word
 * 066 Plus One
 * 067 Add Binary
+* 069 Sqrt(x)
 * 219 Contains Duplicate II
 * 345 Reverse Vowels of a String
 * 492 Construct the Rectangle

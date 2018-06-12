@@ -218,3 +218,14 @@ func Test_addBinary(t *testing.T) {
 	actual = addBinary("1010", "1011")
 	assert.Equal(t, "10101", actual)
 }
+
+func Test_Sqrtx(t *testing.T) {
+	actual := mySqrt(4)
+	assert.Equal(t, 2, actual)
+
+	actual = mySqrt(8)
+	assert.Equal(t, 2, actual)
+
+	actual = mySqrt(3)
+	assert.Equal(t, 1, actual)
+}
