@@ -229,3 +229,31 @@ func Test_Sqrtx(t *testing.T) {
 	actual = mySqrt(3)
 	assert.Equal(t, 1, actual)
 }
+
+func Test_deleteDuplicates(t *testing.T) {
+
+	l1 := new(ListNode)
+	l1.Val = 1
+	l1.Next = &ListNode{
+		Val: 2,
+		Next: &ListNode{
+			Val: 2,
+			Next: &ListNode{
+				Val: 4,
+			},
+		},
+	}
+
+	expected := &ListNode{
+		Val: 1,
+		Next: &ListNode{
+			Val: 2,
+			Next: &ListNode{
+				Val: 4,
+			},
+		},
+	}
+
+	actual := deleteDuplicates(l1)
+	assert.Equal(t, expected, actual)
+}
