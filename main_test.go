@@ -257,3 +257,11 @@ func Test_deleteDuplicates(t *testing.T) {
 	actual := deleteDuplicates(l1)
 	assert.Equal(t, expected, actual)
 }
+
+func Test_merge(t *testing.T) {
+	nums1 := []int{1, 2, 3, 0, 0, 0}
+	nums2 := []int{4, 5, 6}
+	merge(nums1, 3, nums2, 3)
+
+	assert.Equal(t, []int{1, 2, 3, 4, 5, 6}, nums1)
+}
