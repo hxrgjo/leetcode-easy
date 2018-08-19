@@ -265,3 +265,43 @@ func Test_merge(t *testing.T) {
 
 	assert.Equal(t, []int{1, 2, 3, 4, 5, 6}, nums1)
 }
+
+func Test_isSameTree(t *testing.T) {
+	p := &TreeNode{
+		Val: 1,
+		Left: &TreeNode{
+			Val: 2,
+		},
+		Right: &TreeNode{
+			Val: 4,
+		},
+	}
+
+	q := &TreeNode{
+		Val: 1,
+		Left: &TreeNode{
+			Val: 2,
+		},
+		Right: &TreeNode{
+			Val: 4,
+		},
+	}
+
+	assert.True(t, isSameTree(p, q))
+
+	p = &TreeNode{
+		Val: 1,
+		Left: &TreeNode{
+			Val: 2,
+		},
+	}
+
+	q = &TreeNode{
+		Val: 1,
+		Right: &TreeNode{
+			Val: 2,
+		},
+	}
+
+	assert.False(t, isSameTree(p, q))
+}
