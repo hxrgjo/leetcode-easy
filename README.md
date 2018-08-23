@@ -22,6 +22,7 @@ leetcode practice
 * 083 Remove Duplicates from Sorted List
 * 088 Merge Sorted Array
 * 100 Same Tree
+* 101 Symmetric Tree
 * 219 Contains Duplicate II
 * 345 Reverse Vowels of a String
 * 492 Construct the Rectangle

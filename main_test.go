@@ -305,3 +305,38 @@ func Test_isSameTree(t *testing.T) {
 
 	assert.False(t, isSameTree(p, q))
 }
+
+func Test_isSymmetric(t *testing.T) {
+	input := &TreeNode{
+		Left: &TreeNode{
+			Left: &TreeNode{
+				Left:  &TreeNode{Val: 5},
+				Right: &TreeNode{Val: 6},
+				Val:   3,
+			},
+			Right: &TreeNode{
+				Left:  &TreeNode{Val: 7},
+				Right: &TreeNode{Val: 8},
+				Val:   4,
+			},
+			Val: 2,
+		},
+		Right: &TreeNode{
+			Left: &TreeNode{
+				Left:  &TreeNode{Val: 8},
+				Right: &TreeNode{Val: 7},
+				Val:   4,
+			},
+			Right: &TreeNode{
+				Left:  &TreeNode{Val: 6},
+				Right: &TreeNode{Val: 5},
+				Val:   3,
+			},
+			Val: 2,
+		},
+		Val: 1,
+	}
+
+	actual := isSymmetric(input)
+	assert.True(t, actual)
+}
