@@ -340,3 +340,20 @@ func Test_isSymmetric(t *testing.T) {
 	actual := isSymmetric(input)
 	assert.True(t, actual)
 }
+
+func Test_maxDepth(t *testing.T) {
+
+	input := &TreeNode{
+		Left: &TreeNode{
+			Left: &TreeNode{
+				Left: &TreeNode{
+					Right: &TreeNode{},
+				},
+				Right: &TreeNode{},
+			},
+		},
+		Right: &TreeNode{},
+	}
+	actual := maxDepth(input)
+	assert.Equal(t, 5, actual)
+}
